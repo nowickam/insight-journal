@@ -1,0 +1,103 @@
+#weekDays,#monthDays{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-auto-rows: 25%;
+}
+
+#calendarHeader{
+    display: grid;
+    grid-template-columns: 50px 50px auto;
+    font-family: "Arial";
+    font-size:1.75em;
+    font-weight: bolder;
+    margin:20px;
+    border-radius: 25px;
+    background-color:rgb(175, 211, 198);
+    padding:5px;
+    color: #5F5C6D;
+}
+
+.monthChangeButton{
+    font-family: "Arial";
+    margin:5px;
+    border-radius: 50px;
+    font-size: 0.9em;
+    white-space: nowrap;
+    border:none;
+    color:#5F5C6D;
+    background-color:rgb(175, 211, 198);
+}
+
+.monthChangeButton:hover{
+    cursor: pointer;
+    background-color:#ACA9BB;
+}
+
+#weekDays{
+    font-family: "Arial";
+    font-size:1.5em;
+    font-weight: bold;
+    color: #5F5C6D;
+}
+
+#monthDays{
+    font-family: "Arial";
+    font-size:1.25em;
+}
+
+.monthDay{
+    margin:5px;
+    border-radius: 25px;
+    color: #5F5C6D;
+    place-self: center;
+    align-items: center;
+    min-width:40px;
+    min-height:40px;
+}
+
+.monthDay:hover{
+    cursor: pointer;
+    background-color:rgb(109, 168, 148);
+}
+
+.first0{
+    grid-column-start: 7;
+}
+
+.first1{
+    grid-column-start: 1;
+}
+
+.first2{
+    grid-column-start: 2;
+}
+
+.first3{
+    grid-column-start: 3;
+}
+
+.first4{
+    grid-column-start: 4;
+}
+
+.first5{
+    grid-column-start: 5;
+}
+
+.first6{
+    grid-column-start: 6;
+}
+
+.definedProfile{
+    background-color:#ACA9BB;
+}
+
+@media screen and (max-width: 600px){
+    #calendarHeader{
+        grid-template-columns: 25px 25px auto;
+        margin-top:0px;
+    }
+    .monthChangeButton{
+        font-size:0.5em;
+    }
+}

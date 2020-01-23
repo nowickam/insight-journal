@@ -1,0 +1,103 @@
+/* #preparedProfile{
+    display:flex;
+    flex-direction:row;
+} */
+
+.backButton{
+    font-family: "Arial";
+    font-size:1em;
+
+    padding:5px 10px 5px 10px;
+    border-radius: 50px;
+    font-size: 2em;
+    white-space: nowrap;
+    border:none;
+    color:#5F5C6D;
+    background-color:#F7F7F7;
+}
+
+/* .backButton:hover{
+    cursor: pointer;
+    background-color:#ACA9BB;
+} */
+
+#detailsDate{
+    font-family: "Arial";
+    font-size:4.5em;
+    margin-left:20px;
+    margin-top:20px;
+    color:rgb(175, 211, 198);
+}
+
+#noProfile{
+    font-family: "Arial";
+    font-size:2em;
+    color:#5F5C6D;
+    margin-left:20px;
+    margin-top:20px;
+}
+
+#detailsText{
+    font-family: "Arial";
+    font-size:1.2em;
+    text-align: justify;
+    
+    margin: 30px  30px  30px 20px;
+    color:rgb(147, 144, 161);
+}
+
+
+#detailedProfile{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left:20px;
+    margin-top:20px;
+}
+
+.profileHeader{
+    font-family: "Arial";
+    font-size:1.7em;
+    text-align: justify;
+    font-weight: bold;
+    color:#5F5C6D;
+    margin:10px;
+}
+
+.traitName{
+    font-family: "Arial";
+    font-size:1.5em;
+    text-align: justify;
+    font-weight: bold;
+    color:rgb(147, 144, 161);
+}
+
+.traitNumber, .facetNumber{
+    font-family: "Arial";
+    font-size:1em;
+    text-align: justify;
+    font-weight: bold;
+    color:rgb(147, 144, 161);
+}
+
+.facetName{
+    font-family: "Arial";
+    font-size:1.2em;
+    text-align: justify;
+    color:rgb(147, 144, 161);
+}
+
+.facet{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:10px;
+}
+@media screen and (max-width: 600px){
+    #detailsDate{
+        font-size:4em;
+    }
+    #detailedProfile{
+        flex-direction: column;
+    }
+}

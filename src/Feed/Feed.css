@@ -1,0 +1,126 @@
+#entryList{
+    padding-bottom: 50px;
+}
+#entryPanel{
+    width:80%;
+    /* display: block; */
+    margin:10px;
+    position: fixed;
+    bottom: 0;
+    right:0;
+}
+
+#feedContainer{
+    min-height:100%;
+   position:relative;
+}
+
+#entryInput{
+    width:70%;
+    border:none;
+    border-radius: 25px;
+    background-color:rgb(175, 211, 198);
+    color:#5F5C6D;
+    font-family: "Arial";
+    font-size:1em;
+    padding:10px;
+    resize: vertical;
+    max-height: 200px;
+    box-sizing: border-box;
+}
+
+
+.feedButton{
+    width:10%;
+    margin:5px;
+    padding:10px;
+    border-radius: 25px;
+    font-size: 0.9em;
+    white-space: nowrap;
+    border:none;
+    color:#F7F7F7;
+    background-color: rgb(147, 144, 161);
+}
+
+.feedButton:disabled{
+    background-color: rgb(204, 204, 204);
+    cursor:none;
+    pointer-events: none;
+}
+
+.send:hover{
+    cursor: pointer;
+    background-color:rgb(109, 168, 148);
+}
+
+.finish:hover{
+    cursor: pointer;
+    background-color:  #5F5C6D;
+}
+
+
+.entryItem{
+    margin:20px;
+    display:flex;
+    flex-direction:row;
+    direction:rtl;
+    text-align:justify;
+}
+
+.entryContent{
+    background-color: #F7F7F7;
+    font-family: "Arial";
+    font-size:1em;
+    color:rgb(147, 144, 161);
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.deleteButton{
+    background-color: #F7F7F7;
+    margin-right:10px;
+    cursor: pointer;
+    border:none;
+    font-family: "Arial";
+    font-size:1em;
+    color:#5F5C6D;
+    height: 1.5em;
+    width:1.5em;
+    border-radius: 50px;
+}
+
+/* .deleteButton:hover{
+    background-color: #ACA9BB;
+} */
+
+@media screen and (max-width: 600px){
+    #entryPanel{
+        width:100%;
+    }
+
+    #entryInput{
+        width:60%;
+        font-size:0.7em;
+    }
+
+    .feedButton{
+        width:15%;
+        font-size:0.5em;
+    }
+    .entryContent{
+        font-size: 0.5em;
+    }
+    .entryItem{
+        margin:1px;
+        padding:10px;
+    }
+    .deleteButton{
+        margin-right:5px;
+        height: 0.75em;
+        width:0.75em;
+        font-size:0.75em;
+    }
+    #feedContainer{
+        margin-top:0px;
+    }
+}

@@ -1,0 +1,37 @@
+#textTitle{
+    font-family: "Arial";
+    font-size:4.5em;
+    margin-left:20px;
+    margin-top:20px;
+    color:rgb(175, 211, 198);
+}
+
+.helpText {
+    font-family: "Arial";
+    font-size:1.2em;
+    text-align: justify;
+    
+    margin: 10px  10px  10px 20px;
+    color:rgb(147, 144, 161);
+}
+
+.helpTitle{
+    font-family: "Arial";
+    font-size:2em;
+    color:#5F5C6D;
+    margin-left:20px;
+}
+
+.bold{
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 600px){
+    #textTitle{
+        font-size:4em;
+    }
+    .helpText {
+        font-family: "Arial";
+        font-size:1em;
+    }
+}

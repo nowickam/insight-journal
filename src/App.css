@@ -1,0 +1,33 @@
+body{
+    background-color: #F7F7F7;
+}
+
+.App-header{
+    background-color: #F7F7F7;
+    height: 6em;
+    vertical-align: middle;
+    border-top: 2px solid #F7F7F7;
+    margin-bottom: 30px;
+}
+
+.App-title{
+    cursor: pointer;
+    font-size: 5em;
+    margin: 5px;
+    font-family: "Arial";
+}
+
+h1{
+    text-align: center;
+    color: #5F5C6D;
+    
+}
+@media screen and (max-width: 600px){
+    .App-header{
+        margin-bottom: 5px;
+        height:fit-content;
+    }
+    .App-title{
+        font-size: 4em;
+    }
+}
